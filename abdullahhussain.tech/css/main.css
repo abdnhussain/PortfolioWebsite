@@ -41,7 +41,13 @@
  * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
+overflow: scroll;
+overflow-x: hidden;
 }
+::-webkit-scrollbar {
+width: 0px;
+}
+
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 9.375px;
@@ -471,7 +477,7 @@ td:last-child {
 }
 
 .pace .pace-progress {
-  background: #f9a828;
+  background: #AEC320;
   position: fixed;
   z-index: 900;
   top: 0;
@@ -504,13 +510,13 @@ td:last-child {
 #loader {
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 60px;
-  height: 60px;
+  top: 40%;
+  width: 200px;
+  height: 200px;
   margin-left: -30px;
   margin-top: -30px;
   padding: 0;
-  background-color: #f9a828;
+  background-color: #AEC320;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -1511,7 +1517,7 @@ header .header-logo a {
   background-color: #151515;
   background-image: url(../images/prep_header.jpg);
   background-repeat: no-repeat;
-  background-position: center 75%;
+  background-position: center 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1933,7 +1939,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #services .services-list {
   margin-top: 1.2rem;
-  text-align: center;
+  text-align: left;
 }
 #services .services-list .service-item {
   margin-bottom: 3rem;
@@ -2011,7 +2017,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0;
 }
 #portfolio .intro-wrap {
-  padding: 15rem 0 21rem;
+  padding: 7rem 0 21rem;
   background: #111111;
 }
 #portfolio .section-intro h3 {
@@ -2515,7 +2521,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  padding: 12rem 0 12rem;
+  padding: 7rem 0 12rem;
   position: relative;
 }
 #contact .overlay {
@@ -2900,7 +2906,7 @@ footer h4.h05::after {
   margin-top: 3rem;
   text-align: center;
   font-family: "montserrat-regular", sans-serif;
-  font-size: 1.4rem;
+  font-size: 10px;
 }
 .footer-bottom .copyright span {
   display: inline-block;
